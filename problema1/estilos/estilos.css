@@ -1,1 +1,32 @@
-s
+.contenedor-principal {
+  background-color: darkorchid;
+  border: 2px solid black;
+  width: auto;
+  padding: 20px;
+}
+
+.cabecera {
+  background-color: white;
+  border: 2px solid yellow;
+  padding: 10px;
+}
+
+#accordion {
+  background-color: orange;
+  border: 1px solid green;
+  margin-top: 20px;
+}
+
+#accordion h3 {
+  background-color: orange;
+  margin: 0;
+  padding: 5px;
+  font-size: 14px;
+}
+
+#accordion div {
+  background-color: orange;
+  border-top: 1px solid green;
+  padding: 5px;
+}
+
