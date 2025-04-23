@@ -12,8 +12,7 @@
 	<input id="nombre" type="text">
 	<h1>Apellido:</h1>
 	<input id="apellido" type="text">
-	<h1>Fecha de nacimiento:</h1>
-	<input id="fechaNacimiento" type="date">
+	<p><h1>Date:</h1><input type="text" id="datepicker"></p>
 	<button>Generar Mensaje</button>
 </body>
 <script>
@@ -21,13 +20,16 @@
     $("button").click(function() {
       var nombre = $('#nombre').val();
       var apellido = $('#apellido').val();
-      var fechaNacimiento = $('#fechaNacimiento').val();
+      var fechaNacimiento = $('#datepicker').val();
 
       console.log(nombre);
       console.log(apellido);
       console.log(fechaNacimiento);
     });
   });
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
 </script>
 
 </html>
