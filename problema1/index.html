@@ -3,20 +3,74 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="estilos/estilos.css" type="text/css" />
-    <title>Ejemplo HTML5 y CSS3</title>
+    <title>Mensaje</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   </head>
   <body>
-    <div class="uno">
-     <p class="mensaje">Mensaje</p> 
-    </div>
-    <div class="dos">
-      <p class="comentario">Comentario1</p>
-      <p class="comentario">Comentario2</p>
-      <p class="comentario">Comentario3</p>
-      <p class="comentario">Comentario4</p>
-      <p class="comentario">Comentario5</p>
-      <p class="comentario">Comentario6</p>
-    </div>
+      <h2>Mensajeria Iam y Jean</h2>
+      <div id="accordion">
+        <h3>MENSAJE</h3>
+        <div>
+          <p id="HolaComoEstas">Hola Como Estas</p>
+          <p id="Comprension">Comprension</p>
+          <p id="Jean">Bienvenidos a la mensajeria mas PRO</p>
+          <button type="submit">Generar Mensaje</button>
+        </div>
+        <h3>Comentario 1</h3>
+        <div>
+        <p id="mensajeFinal"></p>
+        </div>
+        <h3>Comentario 2</h3>
+        <div>
+          <p id="mensajeFinal2"></p>
+        </div>
+        <h3>Comentario 3</h3>
+        <div>
+          <p id="mensajeFinal3"></p>
+        </div>
+        <h3>Comentario 4</h3>
+        <div>
+          <p id="mensajeFinal4"></p>
+        </div>
+        <h3>Comentario 5</h3>
+        <div>
+          <p id="mensajeFinal5"></p>
+        </div>
+        <h3>Comentario 6</h3>
+        <div>
+          <p id="mensajeFinal6"></p>
+        </div>
+
+
+      </div>
   </body>
+  <script>
+    $(document).ready(function() {
+      $("#accordion").accordion({
+          collapsible: true
+      });
+      $( "button" ).click(function() {
+        var texto1 = $('#HolaComoEstas').text();
+        var texto2 = $('#Comprension').text();
+        var texto3 = $('#Jean').text();
+        $('#mensajeFinal').text("El mensaje es: "+ texto3 + ". Gracias por su "
+          + texto2);
+        $('#mensajeFinal2').text("El mensaje es: "+ texto1 + ". Gracias por su"
+          + texto2);
+        $('#mensajeFinal3').text("El mensaje es: "+ texto1 + ". Gracias por su"
+          + texto2);
+        $('#mensajeFinal3').text("El mensaje es: "+ texto1 + ". Gracias por su "
+          + texto2);
+        $('#mensajeFinal4').text("El mensaje es: "+ texto1 + ". SGracias por su "
+          + texto2);
+        $('#mensajeFinal5').text("El mensaje es: "+ texto1 + ". Gracias por su "
+          + texto2);
+        $('#mensajeFinal6').text("El mensaje es: "+ texto1 + ". Gracias por su "
+          + texto2);
+        console.log(texto1);
+      });
+    });
+  </script>
 </html>
